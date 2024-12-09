@@ -19,9 +19,13 @@ function logoShowAndHide() {
 logoShowAndHide();
 
 // 1차 메뉴에 마우스 올리면 drop-down-btn에 active 클래스 제거
-$(".top-bar__menu-1 > ul > li").mouseenter(function () {
-  $(".drop-down-btn").removeClass("active");
-});
+function topbarMenuEvent() {
+  $(".top-bar__menu-1 > ul > li").mouseenter(function () {
+    $(".drop-down-btn").removeClass("active");
+  });
+}
+
+topbarMenuEvent();
 
 // 드롭다운 이벤트 구현
 function dropDownEvent() {
